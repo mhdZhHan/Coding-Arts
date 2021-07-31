@@ -1,0 +1,63 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+div.container {
+  height: 0;
+  width: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+div.container div.left {
+  height: 100px;
+  width: 100px;
+  background: #3e8fe1;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: rotate(90deg) skewX(-30deg) scaleY(0.864);
+          transform: rotate(90deg) skewX(-30deg) scaleY(0.864);
+}
+
+div.container div.right {
+  height: 100px;
+  width: 100px;
+  background: #2870bd;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: rotate(-30deg) skewX(-30deg) scaleY(0.864);
+          transform: rotate(-30deg) skewX(-30deg) scaleY(0.864);
+  position: relative;
+  bottom: 100px;
+}
+
+div.container div.top {
+  height: 100px;
+  width: 100px;
+  background: #80bdfe;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: rotate(210deg) skew(-30deg) scaleY(0.864);
+          transform: rotate(210deg) skew(-30deg) scaleY(0.864);
+  position: relative;
+  bottom: 200px;
+}
+/*# sourceMappingURL=style.css.map */
