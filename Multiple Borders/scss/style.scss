@@ -1,0 +1,28 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div {
+    width: 250px;
+    height: 160px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0 0 0 15px #4fe6af,
+                0 0 0 30px #10c4d3,
+                0 0 0 45px #0c80e3,
+                0 0 0 60px #0c4e8b;
+    display: grid;
+    place-items: center;
+    letter-spacing: 2px;
+}
