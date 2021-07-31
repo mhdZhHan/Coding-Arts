@@ -1,0 +1,73 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+div {
+  height: 320px;
+  width: 160px;
+  border: 3px solid #0d2436;
+  position: relative;
+  left: 80px;
+  border-left: none;
+  border-radius: 0 160px 160px 0;
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  -webkit-animation: draw 8s infinite linear;
+          animation: draw 8s infinite linear;
+}
+
+div::before {
+  content: '';
+  position: absolute;
+  height: 242px;
+  width: 70px;
+  left: -35px;
+  top: -5px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #ed3569), color-stop(60%, #d2dfe8)) no-repeat, -webkit-gradient(linear, left top, right top, color-stop(33.33%, #f26c37), color-stop(33.33%, #eb852c), color-stop(66.66%, #eb852c), color-stop(66.66%, #f19f22));
+  background: linear-gradient(#ed3569 60%, #d2dfe8 60%) no-repeat, linear-gradient(to right, #f26c37 33.33%, #eb852c 33.33%, #eb852c 66.66%, #f19f22 66.66%);
+  background-size: 100% 40%, 100% 60%;
+  background-position: 0 0, 0 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+div::after {
+  content: '';
+  position: absolute;
+  height: 81px;
+  width: 70px;
+  left: -35px;
+  bottom: -3px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #f4c09b), color-stop(70%, #0d2436));
+  background: linear-gradient(#f4c09b 70%, #0d2436 70%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 50% 100%);
+          clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+@-webkit-keyframes draw {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes draw {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */
