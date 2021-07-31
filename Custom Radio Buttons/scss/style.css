@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Manjari&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manjari', sans-serif;
+}
+
+div.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+div.container input[type="radio"] {
+  display: none;
+}
+
+div.container input[type="radio"]:checked + label {
+  background-color: #01cc65;
+  color: #fff;
+}
+
+div.container input[type="radio"]:checked + label::before {
+  height: 16px;
+  width: 16px;
+  border: 10px solid #fff;
+  background-color: #01cc65;
+}
+
+div.container label {
+  position: relative;
+  color: #01cc65;
+  font-family: 'Manjari', sans-serif;
+  font-size: 30px;
+  border: 2px solid #01cc65;
+  border-radius: 5px;
+  padding: 10px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+div.container label:last-child {
+  margin-bottom: 0;
+}
+
+div.container label::before {
+  content: '';
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 3px solid #01cc65;
+  margin-right: 20px;
+}
+/*# sourceMappingURL=style.css.map */
